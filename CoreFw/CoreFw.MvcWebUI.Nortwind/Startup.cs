@@ -1,32 +1,52 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CoreFw.Business.Abstract;
-using CoreFw.Business.Concrete;
-using CoreFw.Core.DataAccess;
-using CoreFw.Core.DataAccess.EntityFramework;
-using CoreFw.DataAccess.Abstract;
-using CoreFw.DataAccess.Concrete.EntityFramework;
+using System.Security.Claims;
+using Autofac;
+using CoreFw.Business.DependencyResolvers.Autofac;
+using CoreFw.Core.DependencyResolvers;
+using CoreFw.Core.Extensions;
+using CoreFw.Core.Utilities.IoC;
+using CoreFw.DataAccess.DependencyResolvers.Autofac;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+
 
 namespace CoreFw.MvcWebUI.Northwind
 {
   public class Startup
   {
-    // This method gets called by the runtime. Use this method to add services to the container.
-    // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
-    public void ConfigureServices(IServiceCollection services)
+    public IServiceProvider ConfigureServices(IServiceCollection services)
     {
-     
-      services.AddScoped<IProductService, ProductManager>();
-      services.AddScoped<IProductDal, EfProductDal>();
       services.AddMvc();
+
+      services.AddLog4Net();
+
+      services.AddAuthentication(options =>
+        {
+          options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+          options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+          options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        })
+        .AddCookie();
+
+      services.AddTransient<ClaimsPrincipal>(x => x.GetService<IHttpContextAccessor>().HttpContext.User);
+
+      services.AddDependencyResolvers(new IModule[]
+      {
+        new CoreModule(),
+      });
+
+      services.AddAutofacDependencyResolvers(new Module[]
+      {
+        new AutofacDataAccessModule(),
+        new AutofacBusinessModule()
+      });
+
+      return services.CreateAutofacServiceProvider();
     }
+
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
     public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -35,8 +55,12 @@ namespace CoreFw.MvcWebUI.Northwind
       {
         app.UseDeveloperExceptionPage();
       }
-
-      app.UseMvcWithDefaultRoute();
+      //Dikkat => UseAuthentication, UseMvc'den önce çağrılmalıdır.
+      app.UseAuthentication();
+      app.UseMvc(routes =>
+      {
+        routes.MapRoute("default", "{controller=Product}/{action=Index}/{id?}");
+      });
     }
   }
 }

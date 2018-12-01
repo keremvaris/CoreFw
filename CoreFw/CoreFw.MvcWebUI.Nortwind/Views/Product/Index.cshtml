@@ -1,0 +1,19 @@
+﻿@using CoreFw.MvcWebUI.Northwind.Controllers
+@model CoreFw.MvcWebUI.Northwind.Controllers.ProductListViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Product List</title>
+</head>
+<body>
+<div>
+    @foreach (var product in Model.Products)
+    {
+        @product.ProductName<br/>
+    }
+</div>
+</body>
+</html>
+

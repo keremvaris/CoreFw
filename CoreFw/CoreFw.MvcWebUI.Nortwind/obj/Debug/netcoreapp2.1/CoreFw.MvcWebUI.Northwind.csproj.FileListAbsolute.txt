@@ -22,10 +22,10 @@ E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\bin\Debug\netcoreapp2
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\bin\Debug\netcoreapp2.1\CoreFw.Core.pdb
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\bin\Debug\netcoreapp2.1\CoreFw.DataAccess.pdb
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\bin\Debug\netcoreapp2.1\CoreFw.Entities.pdb
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\CoreFw.MvcWebUI.Northwind.csproj.CopyComplete
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\CoreFw.MvcWebUI.Northwind.TagHelpers.input.cache
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\CoreFw.MvcWebUI.Northwind.TagHelpers.output.cache
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\CoreFw.MvcWebUI.Northwind.RazorCoreGenerate.cache
-E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\Razor\Pages\Product\Index.g.cshtml.cs
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\Razor\Views\Product\Index.g.cshtml.cs
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\CoreFw.MvcWebUI.Northwind.RazorTargetAssemblyInfo.cs
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\CoreFw.MvcWebUI.Northwind.Views.pdb
-E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.MvcWebUI.Nortwind\obj\Debug\netcoreapp2.1\CoreFw.MvcWebUI.Northwind.csproj.CopyComplete

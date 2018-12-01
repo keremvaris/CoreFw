@@ -9,3 +9,6 @@ E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Core\bin\Debug\netcoreapp2.1\CoreFw.Cor
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Core\bin\Debug\netcoreapp2.1\CoreFw.Core.pdb
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Core\obj\Debug\netcoreapp2.1\CoreFw.Core.dll
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Core\obj\Debug\netcoreapp2.1\CoreFw.Core.pdb
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Core\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Core\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Core\obj\Debug\netcoreapp2.1\CoreFw.Core.csproj.CopyComplete

@@ -12,3 +12,5 @@ E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\Core
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.csproj.CopyComplete
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.dll
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.pdb
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml

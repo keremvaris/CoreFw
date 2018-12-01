@@ -14,3 +14,5 @@ E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Business\obj\Debug\netcoreapp2.1\CoreFw
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Business\obj\Debug\netcoreapp2.1\CoreFw.Business.csproj.CopyComplete
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Business\obj\Debug\netcoreapp2.1\CoreFw.Business.dll
 E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Business\obj\Debug\netcoreapp2.1\CoreFw.Business.pdb
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Business\bin\Debug\netcoreapp2.1\Newtonsoft.Json.dll
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.Business\bin\Debug\netcoreapp2.1\Newtonsoft.Json.xml

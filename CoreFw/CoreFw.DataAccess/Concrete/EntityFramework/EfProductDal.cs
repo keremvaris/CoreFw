@@ -8,8 +8,7 @@ namespace CoreFw.DataAccess.Concrete.EntityFramework
 {
   public class EfProductDal:EfEntityRepositoryBase<Product,NortwindContext>,IProductDal
   {
-    public EfProductDal(DbSet<Product> entities) : base(entities)
-    {
-    }
+    
+    
   }
 }
