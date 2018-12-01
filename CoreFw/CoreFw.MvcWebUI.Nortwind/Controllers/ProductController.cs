@@ -8,6 +8,7 @@ using CoreFw.Core.CrossCuttingConcerns.Security;
 using CoreFw.Entities.Concrete;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreFw.MvcWebUI.Northwind.Controllers
@@ -21,7 +22,7 @@ namespace CoreFw.MvcWebUI.Northwind.Controllers
       _productService = productService;
       _provider = provider;
     }
-    //[Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Admin")]
     public IActionResult Index()
     {
       return View(new ProductListViewModel
@@ -36,9 +37,18 @@ namespace CoreFw.MvcWebUI.Northwind.Controllers
       _productService.Add(new Product {  ProductName = "Elma" });
       return Content("Added");
     }
+    public IActionResult Update()
+    {
+      _productService.Update(new Product { ProductName = "Elmax" ,ProductId = 4086 });
+      return Content("Updated");
+    }
+    public IActionResult Delete()
+    {
+      _productService.Delete(new Product { ProductName = "Elmax", ProductId = 4086 });
+      return Content("Deleted");
+    }
 
-
-    public IActionResult SingIn()
+    public IActionResult SignIn()
     {
       var userIdentity = new Identity()
       {
@@ -61,7 +71,7 @@ namespace CoreFw.MvcWebUI.Northwind.Controllers
 
       var claimsIdentity = new ClaimsIdentity(userIdentity);
 
-      //claims, CookieAuthenticationDefaults.AuthenticationScheme olmaz ise [Authrize] çalışmıyor
+      //claims, CookieAuthenticationDefaults.AuthenticationScheme olmaz ise [Authorize] çalışmıyor
       var claimsIdentity2 = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
       var claimsPrincipal = new ClaimsPrincipal(new[]

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CoreFw.Core.Entities;
+﻿using CoreFw.Core.Entities;
 
 namespace CoreFw.Entities.Concrete
 {

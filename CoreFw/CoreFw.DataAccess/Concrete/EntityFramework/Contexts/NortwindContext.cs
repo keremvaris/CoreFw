@@ -13,7 +13,7 @@ namespace CoreFw.DataAccess.Concrete.EntityFramework.Contexts
       optionsBuilder.UseSqlServer(@"Server=NEPTUN\DVLP2008;Database=Northwind;Trusted_Connection=true");
     }
 
-    public DbSet<Product> Products { get; set; }
+    public virtual DbSet<Product> Products { get; set; }
     
   }
 }

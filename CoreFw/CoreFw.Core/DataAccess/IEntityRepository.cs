@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using CoreFw.Core.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace CoreFw.Core.DataAccess
 {
@@ -15,23 +16,5 @@ namespace CoreFw.Core.DataAccess
     void Add(T entity);
     void Update(T entity);
     void Delete(T entity);
-  }
-  //public interface IEntityRepository<T> where T : class, IEntity, new()
-  //{
-  //  T Get(Expression<Func<T, bool>> filter = null);
-
-  //  List<T> GetList(Expression<Func<T, bool>> filter = null);
-
-  //  IQueryable<T> Table { get; }
-  //  IQueryable<T> TableNoTracking { get; }
-  //  T GetById(object id);
-
-  //  void Add(T entity);
-  //  void Add(IEnumerable<T> entities);
-  //  void Update(T entity);
-  //  void Update(IEnumerable<T> entities);
-  //  void Delete(T entity);
-  //  void Delete(IEnumerable<T> entities);
-  //  IEnumerable<T> GetSql(string sql);
-  //}
+  } 
 }

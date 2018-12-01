@@ -6,9 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CoreFw.DataAccess.Concrete.EntityFramework
 {
-  public class EfProductDal:EfEntityRepositoryBase<Product,NortwindContext>,IProductDal
+  public class EfProductDal : EfEntityRepositoryBase<Product, NortwindContext>, IProductDal
   {
-    
-    
+   
   }
 }

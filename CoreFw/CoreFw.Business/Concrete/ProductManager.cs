@@ -40,8 +40,9 @@ namespace CoreFw.Business.Concrete
     [CacheInterceptionAspect(typeof(MemoryCacheManager))]
     public List<Product> GetList(Expression<Func<Product, bool>> filter = null)
     {
-      Thread.Sleep(3000);
+      //Thread.Sleep(3000);
       return _productDal.GetList(filter).ToList();
+      
     }
     [TransactionInterceptionAspect]
     [CacheRemoveInterceptionAspect("*Get*")]
