@@ -1,0 +1,34 @@
+﻿@model CoreFw.MvcWebUI.Northwind.Controllers.ProductListViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <th>
+                ProductId
+            </th>
+            <th>
+                ProductName
+            </th>
+        </tr>
+        @foreach (var item in Model.Products)
+        {
+        <tr>
+            <td>
+                @item.ProductId
+            </td>
+            <td>
+                @item.ProductName
+            </td>
+        </tr>
+        }
+    </table>
+</div>
+</body>
+</html>

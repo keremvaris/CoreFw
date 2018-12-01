@@ -1,0 +1,14 @@
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\CoreFw.DataAccess.deps.json
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\CoreFw.DataAccess.dll
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\CoreFw.DataAccess.pdb
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\CoreFw.Core.dll
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\CoreFw.Entities.dll
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\CoreFw.Core.pdb
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\bin\Debug\netcoreapp2.1\CoreFw.Entities.pdb
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.csprojAssemblyReference.cache
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.csproj.CoreCompileInputs.cache
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.AssemblyInfoInputs.cache
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.AssemblyInfo.cs
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.csproj.CopyComplete
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.dll
+E:\src\NewGenSource\CoreFw\CoreFw\CoreFw.DataAccess\obj\Debug\netcoreapp2.1\CoreFw.DataAccess.pdb
